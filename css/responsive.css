@@ -41,13 +41,7 @@
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:961px) and (max-width:1024px) {
 
-  /* .social-icons {
-    height: 100%;
-      padding: 3% 0px;
-    } */
-
-
-
+  
   .name-block {
     padding: 145px 100px;
   }
@@ -215,8 +209,7 @@
     width: 100%;
   }
 
-  .skill-col-1 h3,
-  .skill-col-2 h3 {
+  .skill-col h3 {
 
     font-size: 15px;
   }
@@ -250,6 +243,12 @@
   .about-me-block-person-details p {
     font-size: 16px;
     line-height: 28px;
+  }
+
+  .skill-col div img{
+    width: 60px;
+    height: 60px;
+    
   }
 
   .indivisual-icon h4 {
@@ -297,9 +296,7 @@
     font-size: 15px;
   }
 
-  .portfolio {
-    padding: 62px 35px;
-  }
+  
 
   .projects-filter button {
     padding: 10px 9px;
@@ -484,10 +481,14 @@
     width: 100%;
   }
 
-  .skill-col-1 h3,
-  .skill-col-2 h3 {
+  .skill-col h3{
 
     font-size: 12px;
+  }
+  .skill-col div img{
+    width: 40px;
+    height: 40px;
+    
   }
 
   .acievements {
@@ -724,11 +725,7 @@
     width: 100%;
   }
 
-  .skill-col-1 h3,
-  .skill-col-2 h3 {
 
-    font-size: 12px;
-  }
 
   .acievements {
 
@@ -800,14 +797,23 @@
     width: 100%;
     margin: 24px auto;
     display: block;
+    
   }
 
-  .skill-col-1,
-  .skill-col-2 {
-    width: 100%;
-    margin-bottom: 33px;
+  .skill-col h3{
+
+    font-size: 12px;
+  }
+  .skill-col div{
+    line-height: 3;
   }
 
+  .skill-col div img{
+    width: 60px;
+    height: 60px;
+    
+  }
+ 
   .services {
     padding: 50px 35px;
   }
@@ -1126,10 +1132,14 @@
     width: 100%;
   }
 
-  .skill-col-1 h3,
-  .skill-col-2 h3 {
+  .skill-col h3 {
 
     font-size: 12px;
+  }
+  .skill-col div img{
+    width: 20px;
+    height: 20px;
+    
   }
 
   .acievements {
@@ -1469,7 +1479,7 @@
 
 
 }
-
+}
 
 
 
