@@ -772,7 +772,7 @@ justify-content: space-between;
   display: flex;
   width: 100%;
   margin: 10px auto;
-  padding: 40px 0;
+  padding: 40px 0 0;
 
 }
 
@@ -825,7 +825,7 @@ justify-content: space-between;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 .block-col-1 {
@@ -1139,65 +1139,67 @@ justify-content: space-between;
   width: 100%;
   display: grid;
   grid-gap: 30px;
-  grid-template-rows: repeat(2, 180px);
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* Responsive columns */
+  grid-auto-rows: auto;
+  /* Let rows adjust based on content */
 }
 
 .service-wrap {
-    -webkit-box-shadow: 1px -1px 5px 1px rgb(0 0 0 / 20%);
-    box-shadow: 1px -1px 5px 1px rgb(0 0 0 / 20%);
-    /* border: .8px solid rgba(211, 211, 211, 0.7); */
-    padding: 9px 15px;
-    height: 180px;
-    overflow: hidden;
-    -webkit-transition: all .3s ease 0s;
-    transition: all .3s ease 0s;
-    margin: 0;
-    border-top-left-radius: 1px;
-    border-top-right-radius: 1px;
-    border-bottom-left-radius: 1px;
-    border-bottom-right-radius: 1px;
+  -webkit-box-shadow: 1px -1px 5px 1px rgb(0 0 0 / 20%);
+  box-shadow: 1px -1px 5px 1px rgb(0 0 0 / 20%);
+  padding: 9px 15px;
+  overflow: hidden;
+  height: 100%;
+  /* Ensures the service box expands based on content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Center content vertically */
+  transition: all 0.3s ease;
+  border-radius: 3px;
+  background-color: #fff;
 }
 
 .service-wrap:hover {
   background-color: #ff5959;
+  box-shadow: 1px -1px 8px 2px rgba(0, 0, 0, 0.25);
+  /* Slightly stronger shadow on hover */
 }
 
-.service-wrap:hover i {
-  color: #f9f9f9;
-}
-
-.service-wrap:hover h3 {
-  color: #f9f9f9;
-}
-
-
-.service-wrap p {
-line-height: 30px;
-}
+.service-wrap:hover i,
+.service-wrap:hover h3,
 .service-wrap:hover p {
   color: #f9f9f9;
-  font-weight: 300;
-  
 }
 
 .service-wrap i {
-
   color: #ff5959;
-  font-size: 17px;
+  font-size: 35px;
+  /* Larger icon size for more visual impact */
+  margin-bottom: 10px;
 }
 
 .service-wrap h3 {
   color: #464F41;
   font-weight: 900;
   font-size: 20px;
-  padding: 8px 0;
+  margin: 8px 0;
 }
 
 .service-wrap p {
   font-weight: 500;
   font-size: 17px;
   color: #c7c5c5;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .grid-col {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Adjusts to smaller screens */
+  }
 }
 
 

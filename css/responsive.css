@@ -279,7 +279,7 @@
     width: 100%;
     display: grid;
     grid-gap: 20px;
-    grid-template-rows: repeat(3, 185px);
+    grid-template-rows: repeat(2, 185px);
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -544,7 +544,7 @@
     width: 100%;
     display: grid;
     grid-gap: 20px;
-    grid-template-rows: repeat(6, 160px);
+    grid-template-rows: repeat(4, 160px);
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -847,7 +847,7 @@
     width: 100%;
     display: grid;
     grid-gap: 20px;
-    grid-template-rows: repeat(6, 184px);
+    grid-template-rows: repeat(4, 184px);
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -1261,7 +1261,7 @@
     width: 100%;
     display: grid;
     grid-gap: 20px;
-    grid-template-rows: repeat(6, 184px);
+    grid-template-rows: repeat(4, 184px);
     grid-template-columns: repeat(1, 1fr);
   }
 
