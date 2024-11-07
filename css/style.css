@@ -377,7 +377,7 @@ a {
     -webkit-animation: circle 3s linear infinite;
     animation: circle 1.5s linear infinite;
     margin-top: 6px;
-    margin-left: -12px;
+    margin-left: -30px;
 }
 
 @-webkit-keyframes circle {
@@ -616,7 +616,7 @@ justify-content: space-between;
   background: #4a60d5;
   width: 100%;
   height: 100%;
-  padding: 179px 150px;
+  padding: 179px 150px 267px;
 
 }
 
@@ -1045,6 +1045,57 @@ justify-content: space-between;
   -ms-flex-align: center;
   align-items: center;
   display: block;
+}
+
+.skill-col {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-item img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    animation: bounce 3s ease-in-out infinite;
+}
+
+/* Bouncy animation keyframes */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.skill-item:hover img {
+    animation: bounce-hover 0.8s ease-in-out;
+}
+
+@keyframes bounce-hover {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+h3 {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
 }
 
 
